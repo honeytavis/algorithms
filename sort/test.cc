@@ -5,6 +5,7 @@
 #include "selectionSort.h"
 
 #include "bubbleSort.h"
+#include "quickSort.h"
 
 #include "mergeSort.h"
 
@@ -25,6 +26,7 @@ int main()
   // selectionSort(data); 
 
   // bubbleSort(data); 
+  // quickSort(data); 
 
   // mergeSort(data); 
 

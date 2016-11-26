@@ -2,6 +2,7 @@
 #define _QUICK_SORT_H_
 
 #include <vector> 
+#include <algorithm>
 
 template<typename Object>
 void 

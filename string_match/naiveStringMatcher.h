@@ -1,10 +1,10 @@
-#ifndef _NAIVE_STRING_MATCH_
-#define _NAIVE_STRING_MATCH_
+#ifndef _NAIVE_STRING_MATCHER_
+#define _NAIVE_STRING_MATCHER_
 
 #include <iostream>
 #include <string>
 
-void naiveStringMatch(std::string T, std::string P) {
+void naiveStringMatcher(const std::string& T, const std::string& P) {
   int n = T.size(); 
   int m = P.size(); 
 

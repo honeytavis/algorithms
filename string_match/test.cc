@@ -1,9 +1,8 @@
-#include "naiveStringMatch.h"
+#include "naiveStringMatcher.h"
 
 int main()
 {
-  // naiveStringMatch(" ", " "); 
-  naiveStringMatch("ababcabababaababa", "ababa"); 
+  naiveStringMatcher("ababcabababaababa", "ababa"); 
 
   return 0; 
 }

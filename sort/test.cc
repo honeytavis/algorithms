@@ -12,6 +12,8 @@
 #include "countingSort.h"
 #include "bucketSort.h"
 
+#include "KthElem.h"
+
 #include <iostream>
 #include <vector>
 #include <iterator>
@@ -27,7 +29,7 @@ int main()
   // shellSortHb(data); 
 
   // bubbleSort(data); 
-  // quickSort(data); 
+  quickSort(data); 
 
   // selectionSort(data); 
   // heapSort(data); 
@@ -36,9 +38,10 @@ int main()
   // countingSort(data); 
   // bucketSort(data); 
 
-  std::copy(data.begin(), data.end(), 
-            std::ostream_iterator<int>(std::cout, " ")); 
+  std::copy(data.begin(), data.end(), std::ostream_iterator<int>(std::cout, " ")); 
   std::cout << std::endl; 
+
+  // std::cout << KthElem(data, 20) << std::endl;
 
   return 0; 
 }

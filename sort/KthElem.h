@@ -22,7 +22,8 @@ Object& KthElem(std::vector<Object>& A, int p, int r, const int& k) {
 
 template<typename Object>
 Object& KthElem(std::vector<Object>& A, const int& k) {
-  return KthElem(A, 0, A.size()-1, k-1); 
+  if (k > 0 && k <= A.size()) 
+    return KthElem(A, 0, A.size()-1, k-1); 
 }
 
 #endif

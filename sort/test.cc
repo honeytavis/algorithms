@@ -2,10 +2,11 @@
 #include "shellSort.h"
 #include "shellSortHb.h"
 
-#include "selectionSort.h"
-
 #include "bubbleSort.h"
 #include "quickSort.h"
+
+#include "selectionSort.h"
+#include "heapSort.h"
 
 #include "mergeSort.h"
 #include "countingSort.h"
@@ -25,10 +26,11 @@ int main()
   // shellSort(data); 
   // shellSortHb(data); 
 
-  // selectionSort(data); 
-
   // bubbleSort(data); 
   // quickSort(data); 
+
+  // selectionSort(data); 
+  // heapSort(data); 
 
   // mergeSort(data); 
   // countingSort(data); 

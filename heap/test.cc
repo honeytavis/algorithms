@@ -1,18 +1,17 @@
-#include "buildMaxHeap.h"
+#include "heap.h"
 
 #include <iostream>
 #include <vector>
 #include <iterator>
-#include <algorithm>
 
 int main()
 {
-  int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}; 
-  std::vector<int> A(a, a+12);
+  int coll[] = {0, 50, 18, 14, 16, 15, 13, 12, 11, 10, 17, 9, 8, 7, 4, 5, 6, 3, 2, 1}; 
+  std::vector<int> data(coll, coll+20); 
 
-  buildMaxHeap(A); 
+  heapSort(data); 
 
-  std::move(A.begin(), A.end(), 
+  std::copy(data.begin(), data.end(), 
             std::ostream_iterator<int>(std::cout, " ")); 
   std::cout << std::endl; 
 
